@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form - Backup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #000435;
+            color: white;
+        }
+        .form-container {
+            background-color: #131332;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background-color: #363659;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            box-sizing: border-box;
+        }
+        input::placeholder, textarea::placeholder {
+            color: rgba(255,255,255,0.7);
+        }
+        button {
+            background-color: #1e40af;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #1d4ed8;
+        }
+        .success {
+            color: #10b981;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Contact Saloni</h1>
+        <p>Send me a message directly:</p>
+        
+        <!-- FormSubmit form - works without any setup -->
+        <form action="https://formsubmit.co/salonipradhan2061@gmail.com" method="POST">
+            <!-- FormSubmit configuration -->
+            <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://your-domain.com/thank-you.html">
+            
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        
+        <div class="success">
+            <p><strong>Alternative:</strong> Email me directly at <a href="mailto:salonipradhan2061@gmail.com" style="color: #60a5fa;">salonipradhan2061@gmail.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
